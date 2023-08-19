@@ -1,0 +1,45 @@
+---
+title: "Zumper-Apartment-West End Vancouver"
+author: "Alisa Hongpong"
+date: "2023-08-19"
+output: html_document
+---
+
+##Structure of Data
+
+The original"Zumper-Apartment-West End Vancouver" dataset consists of 11 variables. All of these variables are scraped from www.Zumper.com filtered for West End Vancouver location. Over 117 posts are collected. 
+
+
+```{r}
+
+str(Zumper_with_outliers)
+
+```
+
+##Cleanning Data
+
+Due to a few number of data, cleaning process was done by Excel.
+
+##Indentify outlier values
+
+There are some outlier values for the studio type, so these values will be removed
+
+
+```{r}
+
+ggplot(Zumper_with_outliers, aes(Room,Price))+ geom_boxplot()
+```
+
+## Remove outliers
+
+After the validation and cleaning, the data has 115 rows and 11 columns.
+
+```{r}
+ggplot(Zumper, aes(Room,Price))+ geom_boxplot()
+
+```
+#What is the average price for each room type?
+
+
+
+
