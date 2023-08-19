@@ -1,0 +1,19 @@
+---
+title: "Zumper-Apartment-West End Vancouver"
+author: "Alisa Hongpong"
+date: "2023-08-19"
+output: html_document
+---
+
+##Structure of Data
+
+The original"Zumper-Apartment-West End Vancouver" dataset consists of 
+
+
+
+
+```{r}
+
+str(Zumper)
+```
+
